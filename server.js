@@ -17,7 +17,15 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use('/assets', express.static(__dirname + '/app/public/assets'));
 
 // Start the server to begin listening
+/*
 app.listen(PORT, function(err) {
+	if(err) {
+		console.log(err);
+	}
+	console.log('App is listening on port ' + PORT);
+});*/
+
+app.listen(process.env.PORT || PORT, function(err) {
 	if(err) {
 		console.log(err);
 	}
