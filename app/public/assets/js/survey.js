@@ -48,10 +48,6 @@ $(document).ready(function() {
         if(!validUrl.test(photo)) {
             errors.push("Please enter a valid photo Url!");
         }
-        /*
-        if(!photo) {
-            errors.push("You left the photo field blank!");
-        }*/
 
         // Store the answers, and save errors, if any
   	    var answersArray = [];
@@ -92,7 +88,7 @@ $(document).ready(function() {
             $('input').val("");
   			$('select').val("");
 
-  			$('.match-heading').text("Congrats! You have matched with " + data.name);
+  			$('.match-heading').html("Congrats! You have matched with " + data.name);
   			$('.match-img').html('<img src="' + data.photo + '" width="90%"" height="auto" alt="Match Person">');
   			$('#match-modal').modal("show");
   		});
