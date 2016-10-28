@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FriendFinder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Bungee|Fjalla+One|Orbitron|Ravi+Prakash|Russo+One" rel="stylesheet">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+	<!-- Match modal -->
+	<div class="modal fade" id="match-modal" tabindex="-1" role="dialog">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header text-center">
+	        		<h4 class="modal-title match-heading text-center"></h4>
+	      		</div>
+	      		<div class="modal-body match-img text-center">
+
+	      		</div>
+	      		<div class="modal-footer">
+	      			<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-window-button">Close Window</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<!-- Alert modal -->
+	<div id="alert-modal" class="modal fade" role="dialog">
+	  	<div class="modal-dialog">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	        		<h2 class="modal-title"><strong>Friend Finder</strong></h2>
+	      		</div>
+	      		<div class="modal-body">
+	        		<p id="alert-msg"></p>
+	      		</div>
+	      		<div class="modal-footer">
+	        		<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="container section-about">
+		<h2> Survey Questions </h2>
+
+		<hr>
+
+		<a href="/"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home</a>
+			<h3><strong> About You </strong></h3>
+			<h4> Name (Required) </h4>
+			<input type="text" name="" id="name" class="form-control">
+
+			<h4> Link to Photo Image (Required) </h4>
+			<input type="text" name="" id="photo" class="form-control">
+			<br>
+		<hr>
+	</div>
+		
+	<div class="container section-questions">
+		<!-- Holder for dynamically created questions -->
+		<div id="questions"></div>
+		
+		<br>
+		<br>
+
+		<!-- Submit Button -->
+		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+ 		<br>
+ 	</div>
+		<hr>
+
+	    <footer class="footer">
+	      	<div class="container">
+		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/trooperandz/Friend-Finder-Node-Express" target="_blank">GitHub Repo</a></p>
+	      	</div>
+	    </footer>
+	</div> <!-- .container -->
+
+	<!-- jQuery library -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
+  	<!-- Core Bootstrap js library -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity=  	sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  	<!-- Custom script -->
+  	<script src="assets/js/survey.js"></script>
+  	
+</body>
+</html>

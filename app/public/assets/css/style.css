@@ -1,0 +1,42 @@
+/* Apply Google font to entire body */
+body {
+	font-family: 'Fjalla One', sans-serif;
+	background-color: #b4dddd;
+}
+
+/* Main game heading styles */
+.jumbotron {
+	font-family: 'Bungee', cursive;
+    margin-bottom: 5px;
+    background: #4aa;
+    color: #000;
+}
+
+.section-about {
+	background-color: #4aa;
+}
+
+.section-questions {
+	background-color: #aa4444;
+}
+
+/* Center align all text */
+.text-center {
+	text-align: center;
+}
+
+h4 {
+	color: #fff;
+}
+
+.btn {
+	border-radius: 2px;
+}
+
+.btn-purple {
+	background-color: #aa44aa;
+}
+
+.btn-blue {
+	background-color: #4477aa;
+}
